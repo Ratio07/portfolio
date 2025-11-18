@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QSI-CS-Courses/saitama.git"
+    "url": "https://github.com/Ratio07/portfolio"
   },
   "keywords": [],
-  "author": "",
+  "author": "https://github.com/Ratio07/portfolio",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/QSI-CS-Courses/saitama/issues"
+    "url": "https://github.com/Ratio07/portfolio"
   },
-  "homepage": "https://github.com/QSI-CS-Courses/saitama#readme",
+  "homepage": "",
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",

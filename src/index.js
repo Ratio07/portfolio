@@ -1,27 +1,28 @@
 // Require images so webpack knows to include them
-const saitama1 = require('../public/saitama1.png');
-const saitama2 = require('../public/saitama2.png');
-const saitama3 = require('../public/saitama3.png');
+const pic1 = require('../public/pic1.jpg');
+const pic2 = require('../public/pic2.jpg');
+const pic3 = require('../public/pic3.jpg');
+
 
 // ===== IMAGE CAROUSEL JS =====
 const imageUrls = [
-  saitama1,
-  saitama2,
-  saitama3
+  pic1,
+  pic2,
+  pic3
   // Add more image filenames here if needed
 ];
 
 let currentImageIndex = 0;
-const heroImg = document.getElementById('hero-img');
+const Img = document.getElementById('hero-img');
 const carouselNav = document.getElementById('carousel-nav');
 
 // Fallback image if none load
-const fallbackImage = 'https://placehold.co/300x400/ff9a9e/white?text=Saitama';
+const fallbackImage = 'https://placehold.co/300x400/ff9a9e/white?text=Sean%20Chao';
 
 if (imageUrls.length === 0) {
-  heroImg.src = fallbackImage;
+  Img.src = fallbackImage;
 } else if (imageUrls.length === 1) {
-  heroImg.src = imageUrls[0];
+  Img.src = imageUrls[0];
 } else {
   // Create navigation dots
   imageUrls.forEach((_, index) => {
@@ -39,10 +40,10 @@ function showImage(index) {
   currentImageIndex = index;
   const img = new Image();
   img.onload = () => {
-    heroImg.src = img.src;
+    Img.src = img.src;
   };
   img.onerror = () => {
-    heroImg.src = fallbackImage;
+    Img.src = fallbackImage;
   };
   img.src = imageUrls[index];
 
